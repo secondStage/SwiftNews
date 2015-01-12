@@ -43,6 +43,11 @@ class ViewController: UITableViewController {
         return cell
     }
     
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        // セグエを実行する
+        performSegueWithIdentifier("detail", sender: entries[indexPath.row])
+    }
+    
     // ニュースのアドレス
     @IBAction func refresh(sender: AnyObject) {
         // NSURLを作る
@@ -71,5 +76,16 @@ class ViewController: UITableViewController {
             })
         })
         task.resume()
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // "detail"セグエの場合
+        if segue.identifier == "detail" {
+            // DetailControllerを取得する
+            var detailController = segue.destinationViewController as DetailController
+            
+            // エントリーを設定する
+            detailController.entry = sender as NSDictionary
+        }
     }
 }

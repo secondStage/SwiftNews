@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="O0w-H1-Z70">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--SwiftNews-->
@@ -32,10 +33,47 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="Lap-Pf-kMd" kind="show" identifier="detail" id="tes-UC-w0U"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KOa-xn-7ly" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-145" y="381"/>
+        </scene>
+        <!--Detail Controller-->
+        <scene sceneID="Cla-cI-OHM">
+            <objects>
+                <viewController id="Lap-Pf-kMd" customClass="DetailController" customModule="SwiftNews" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5oY-3Y-I5o"/>
+                        <viewControllerLayoutGuide type="bottom" id="FVj-GO-UxH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KhV-6y-qJ7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SKm-Pp-cAF">
+                                <rect key="frame" x="0.0" y="-10" width="320" height="588"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SKm-Pp-cAF" firstAttribute="top" secondItem="KhV-6y-qJ7" secondAttribute="topMargin" constant="-10" id="9bQ-BR-UoB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SKm-Pp-cAF" secondAttribute="trailing" constant="-16" id="dxi-vK-Rm1"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="SKm-Pp-cAF" secondAttribute="bottom" constant="-10" id="icu-ZX-abP"/>
+                            <constraint firstItem="SKm-Pp-cAF" firstAttribute="leading" secondItem="KhV-6y-qJ7" secondAttribute="leadingMargin" constant="-16" id="l3q-gL-HJy"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="webView" destination="SKm-Pp-cAF" id="M4l-Er-hqR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jbi-EA-57G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="308" y="381"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="OfI-jp-YnT">

@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftNews/DetailController.swift"
-            timestampString = "441444842.104395"
+            timestampString = "442751245.61006"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "9"
-            endingLineNumber = "9"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
             landmarkName = "didReceiveMemoryWarning()"
             landmarkType = "5">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftNews/DetailController.swift"
-            timestampString = "441444843.428135"
+            timestampString = "442751245.61006"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "10"
-            endingLineNumber = "10"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
             landmarkName = "didReceiveMemoryWarning()"
             landmarkType = "5">
          </BreakpointContent>
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftNews/ViewController.swift"
-            timestampString = "442746642.5848"
+            timestampString = "442750676.274131"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "70"
-            endingLineNumber = "70"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
             landmarkName = "refresh(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -58,13 +58,131 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftNews/ViewController.swift"
-            timestampString = "442746642.5848"
+            timestampString = "442750676.274131"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
             landmarkName = "refresh(_:)"
             landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftNews/DetailController.swift"
+            timestampString = "442751566.044879"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "8"
+            endingLineNumber = "8"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftNews/DetailController.swift"
+            timestampString = "442751567.521478"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "5"
+            endingLineNumber = "5"
+            landmarkName = "DetailController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftNews.DetailController.webView.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.UIWebView&gt;"
+                  moduleName = "SwiftNews"
+                  urlString = "file:///Users/mafuyukamono/git/SwiftNews/SwiftNews/DetailController.swift"
+                  timestampString = "442751567.524316"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "5"
+                  endingLineNumber = "5"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftNews.DetailController.webView.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.UIWebView&gt;"
+                  moduleName = "SwiftNews"
+                  urlString = "file:///Users/mafuyukamono/git/SwiftNews/SwiftNews/DetailController.swift"
+                  timestampString = "442751567.524539"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "5"
+                  endingLineNumber = "5"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftNews.DetailController.webView.materializeForSet : weak Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.UIWebView&gt;"
+                  moduleName = "SwiftNews"
+                  urlString = "file:///Users/mafuyukamono/git/SwiftNews/SwiftNews/DetailController.swift"
+                  timestampString = "442751567.52471"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "5"
+                  endingLineNumber = "5"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftNews.DetailController.init (SwiftNews.DetailController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;ObjectiveC.NSBundle&gt;) -&gt; SwiftNews.DetailController"
+                  moduleName = "SwiftNews"
+                  urlString = "file:///Users/mafuyukamono/git/SwiftNews/SwiftNews/DetailController.swift"
+                  timestampString = "442751567.524874"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "5"
+                  endingLineNumber = "5"
+                  offsetFromSymbolStart = "53">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftNews.DetailController.init (SwiftNews.DetailController.Type)() -&gt; SwiftNews.DetailController"
+                  moduleName = "SwiftNews"
+                  urlString = "file:///Users/mafuyukamono/git/SwiftNews/SwiftNews/DetailController.swift"
+                  timestampString = "442751567.525039"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "5"
+                  endingLineNumber = "5"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftNews.DetailController.init (SwiftNews.DetailController.Type)(coder : ObjectiveC.NSCoder) -&gt; SwiftNews.DetailController"
+                  moduleName = "SwiftNews"
+                  urlString = "file:///Users/mafuyukamono/git/SwiftNews/SwiftNews/DetailController.swift"
+                  timestampString = "442751567.525205"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "5"
+                  endingLineNumber = "5"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
