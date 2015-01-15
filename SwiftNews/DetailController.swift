@@ -20,7 +20,7 @@ class DetailController: UIViewController {
     }
     
     @IBAction func twitter(sender: AnyObject) {
-        // Twitterへ投稿できるか確認
+        // Twitterへ投稿できるかを確認
         if SLComposeViewController.isAvailableForServiceType(SLServiceTypeTwitter) {
             // コントローラを作る
             var controller = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
@@ -41,7 +41,7 @@ class DetailController: UIViewController {
     }
     
     @IBAction func facebook(sender: AnyObject) {
-        // Facebookへ投稿できるか確認
+        // Facebookへ投稿できるかを確認
         if SLComposeViewController.isAvailableForServiceType(SLServiceTypeTwitter) {
             // コントローラを作る
             var controller = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
