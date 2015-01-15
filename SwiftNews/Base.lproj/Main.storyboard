@@ -66,6 +66,19 @@
                             <constraint firstItem="SKm-Pp-cAF" firstAttribute="leading" secondItem="KhV-6y-qJ7" secondAttribute="leadingMargin" constant="-16" id="l3q-gL-HJy"/>
                         </constraints>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem title="Twitter" id="Myc-Mj-qQJ">
+                            <connections>
+                                <action selector="twitter:" destination="Lap-Pf-kMd" id="kpR-Sz-5nC"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="RMM-Vl-AE0"/>
+                        <barButtonItem title="Facebook" id="N4B-dH-TbM">
+                            <connections>
+                                <action selector="facebook:" destination="Lap-Pf-kMd" id="9iL-dB-pun"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="webView" destination="SKm-Pp-cAF" id="M4l-Er-hqR"/>
@@ -78,12 +91,15 @@
         <!--Navigation Controller-->
         <scene sceneID="OfI-jp-YnT">
             <objects>
-                <navigationController id="O0w-H1-Z70" sceneMemberID="viewController">
+                <navigationController toolbarHidden="NO" id="O0w-H1-Z70" sceneMemberID="viewController">
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="I5y-zE-mdZ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="RlV-uS-fL7">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="tf7-ja-77u" kind="relationship" relationship="rootViewController" id="Itp-bV-plX"/>
                     </connections>

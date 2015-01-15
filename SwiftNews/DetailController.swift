@@ -1,4 +1,5 @@
 import UIKit
+import Social
 
 class DetailController: UIViewController {
     
@@ -16,5 +17,47 @@ class DetailController: UIViewController {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    @IBAction func twitter(sender: AnyObject) {
+        // Twitterへ投稿できるか確認
+        if SLComposeViewController.isAvailableForServiceType(SLServiceTypeTwitter) {
+            // コントローラを作る
+            var controller = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
+            
+            // リンクを作る
+            var link = entry["link"] as String
+            var url  = NSURL(string: link)
+            controller.addURL(url)
+            
+            // テキストを追加する
+            var title = entry["title"] as String
+            controller.setInitialText(title)
+            
+            // 投稿画面を表示する
+            presentViewController(controller, animated: true, completion: {})
+        
+        }
+    }
+    
+    @IBAction func facebook(sender: AnyObject) {
+        // Facebookへ投稿できるか確認
+        if SLComposeViewController.isAvailableForServiceType(SLServiceTypeTwitter) {
+            // コントローラを作る
+            var controller = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
+            
+            // リンクを作る
+            var link = entry["link"] as String
+            var url  = NSURL(string: link)
+            controller.addURL(url)
+            
+            // テキストを追加する
+            var title = entry["title"] as String
+            controller.setInitialText(title)
+            
+            // 投稿画面を表示する
+            presentViewController(controller, animated: true, completion: {})
+            
+        }
     }
 }
