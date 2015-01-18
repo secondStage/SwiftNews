@@ -13,7 +13,7 @@ class ViewController: UITableViewController {
     var entries = NSArray()
     
     // ニュースサイトのアドレス
-    let newsUrlString = "http://ajax.googleapis.com/ajax/services/feed/load?v=1.0&q=http://rss.dailynews.yahoo.co.jp/fc/rss.xml&num=8"
+    let newsUrlString = "http://ajax.googleapis.com/ajax/services/feed/load?v=1.0&q=http://rss.itmedia.co.jp/rss/2.0/news_bursts.xml&num=8"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,14 +32,23 @@ class ViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         // セルを取得する
-        var cell = tableView.dequeueReusableCellWithIdentifier("news") as UITableViewCell
+        var cell: UITableViewCell = tableView.dequeueReusableCellWithIdentifier("news") as UITableViewCell
         
         // エントリーを取得する
         var entry = entries[indexPath.row] as NSDictionary
         
         // セルにタイトルを設定する
-        cell.textLabel!.text = entry["title"] as? String
+        var titleLabel = cell.viewWithTag(1) as UILabel
+        titleLabel.text = entry["title"] as? String
         
+        // 本文ラベルを取得して、本文を設定する
+        var descriptionLabel = cell.viewWithTag(2) as UILabel
+        descriptionLabel.text = entry["contentSnippet"] as? String
+        
+        // 日付ラベルを取得して、日付を設定する
+        var dateLabel = cell.viewWithTag(3) as UILabel
+        dateLabel.text = entry["publishedDate"] as? String
+
         return cell
     }
     
